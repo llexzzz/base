@@ -428,6 +428,15 @@ data.attributes.map((attribute, index) => {
   addAttribute(attribute, index)
 })
 
+data.pericias.map((pericia, index) => {
+  addpericia(pericia, index)
+})
+
+data.acesso.map((pericia, index) => {
+  addpericiar(pericia, index)
+})
+
+
 
 
 
@@ -855,3 +864,37 @@ function deleteWeapon(id) {
 
 
 
+function addpericia(pericia, id) {
+
+
+
+  const newpericia = $(`<div class="pericia" id="pericia_${id}">
+    <a id="click_${id}" onclick="rollAtribute('${pericia.type}', ${pericia.amount} )">
+      <img class="attributeDice" src="./img/dado.png" alt="Dado">
+    </a>
+    <h3>${pericia.type}</h3>
+    <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
+  </div>`)
+
+
+  $('#periciasList').append(newpericia)
+
+}
+
+
+function addpericiar(pericia, id) {
+
+
+
+  const newpericiar = $(`<div class="pericia" id="pericia_${id}">
+    <a id="click_${id}" onclick="rollAtribute('${pericia.type}', ${pericia.amount} )">
+      <img class="attributeDice" src="./img/dado.png" alt="Dado">
+    </a>
+    <h3>${pericia.type}</h3>
+    <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
+  </div>`)
+
+
+  $('#periciasListr').append(newpericiar)
+
+}
