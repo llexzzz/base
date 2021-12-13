@@ -8,42 +8,21 @@ const data = {
   residence: 'São paulo',
 
   life: {
-    current: 12,
-    max: 14,
+    current: 10,
+    max: 10,
   },
   sanity: {
-    current: 65,
-    max: 66,
+    current: 50,
+    max: 50,
   },
 
   lifeo: {
-    current: 11,
-    max: 11,
+    current: 10,
+    max: 10,
   },
 
   weapons: [
-    {
-      name: 'Balestra',
-      type: 'Arco',
-      damage: '1d20',
-      numCurrent: 1,
-      numMax: 1,
-      attack: 5,
-      reach: '10 m',
-      defect: 1,
-      area: '',
-    },
-    {
-      name: 'Canivete',
-      type: 'Briga',
-      damage: '1d10',
-      numCurrent: '',
-      numMax: '',
-      attack: '1/2',
-      reach: '',
-      defect: 1,
-      area: '',
-    },
+    
   ],
   attributes: [
     {
@@ -88,57 +67,64 @@ const data = {
     },
   ],
 
+
+  acesso:[
+    {
+      type:'Escutar',
+      amount:'5',
+      },
+      
+      
+      {
+      type:'Encontrar',
+      amount:'5',
+      },
+
+      
+
+
+  ],
+
   pericias: [
 
-    {
-    type:'Espingardas',
-    amount:'17',
-    },
     
-    {
-    type:'Lutar(Briga)',
-    amount:'14',
-    },
-    
-    
-    {
-    type:'Arremessar',
-    amount:'14',
-    },
-    
-    
-    {
-    type:'Pulo',
-    amount:'14',
-    },
-    
-    
-    {
-    type:'Nadar',
-    amount:'12',
-    },
-    
-    {
-    type:'Escalar',
-    amount:'12',
-    },
-    
-    {
-    type:'Dirigir',
-    amount:'11',
-    },
-    
-    
+    //força
     {
     type:'Agarrar',
     amount:'5',
     },
+
+    {
+      type:'Pulo',
+      amount:'10',
+      },
+
+      {
+        type:'Arremessar',
+        amount:'5',
+        },
+
+
+        //destreza
+        
     
+    {
+    type:'Escalar',
+    amount:'8',
+    },
     
+
+
     {
     type:'Furtividade',
     amount:'8',
     },
+
+
+    {
+      type:'Nadar',
+      amount:'8',
+      },
     
     
     {
@@ -150,18 +136,21 @@ const data = {
     type:'Fotografia',
     amount:'5',
     },
+
+    //constituição
     
     {
     type:'Escutar',
-    amount:'9',
+    amount:'5',
     },
     
     
     {
     type:'Encontrar',
-    amount:'10',
+    amount:'5',
     },
     
+    //inteligência
     
     {
     type:'História',
@@ -171,18 +160,14 @@ const data = {
     
     {
     type:'Investigar',
-    amount:'10',
-    },
-    
-    {
-    type:'Chicotes',
     amount:'5',
     },
-    
+
+
     {
-    type:'1°s Socorros',
-    amount:'10',
-    },
+      type:'1°s Socorros',
+      amount:'10',
+      },
     
     
     {
@@ -190,7 +175,8 @@ const data = {
     amount:'5',
     },
     
-    
+    //aparencia
+
     {
     type:'Persuadir',
     amount:'3',
@@ -221,160 +207,197 @@ const data = {
     
     {
     type:'Psicologia',
-    amount:'7',
-    },
-    
-    
-    {
-    type:'Dirigir Automóveis',
-    amount:'8',
-    },
-    
-    {
-    type:'Usar Arco',
     amount:'5',
     },
     
     
+
+    //educação
+
     {
-    type:'Usar Pistola',
-    amount:'13',
-    },
-    
-    
-    {
-    type:'Lutar Machado',
-    amount:'5',
-    },
-    
-    
-    {
-    type:'Geologia',
-    amount:'5',
-    },
-    
+      type:'Arco, Balestra, Besta',
+      amount:'5',
+      },
+
+      {
+        type:'Armas Pesadas',
+        amount:'2',
+        },
+        
+        
     
     {
-    type:'Contabilidade',
-    amount:'2',
-    },
-    
-    {
-    type:'Medicina',
-    amount:'7',
-    },
-    
-    {
-    type:'Direito',
-    amount:'2',
-    },
+        type:'Lança-chamas',
+        amount:'2',
+        },
     
     
     {
-    type:'Quimica',
-    amount:'1',
-    },
+        type:'Metralhadoras',
+        amount:'5',
+        },
     
-    
-    {
-    type:'Antropologia',
-    amount:'1',
-    },
     
     
     {
-    type:'Arqueologia',
-    amount:'1',
-    },
+        type:'Pistola,Revólver',
+        amount:'8',
+        },
     
+    
+        {
+        type:'Rifle, Espingarda',
+        amount:'6',
+        },
     
     
     
     
     
     {
-    type:'Farmácia',
-    amount:'1',
-    },
+        type:'Briga',
+        amount:'8',
+        },
     
-    {
-    type:'Astronomia',
-    amount:'1',
-    },
     
     
     {
-    type:'Biologia',
-    amount:'1',
-    },
+        type:'Chicotes',
+        amount:'1',
+        },
+    
+    
     
     
     {
-    type:'Chaveiro',
-    amount:'1',
-    },
+        type:'Espadas',
+        amount:'5',
+        },
     
     
     {
-    type:'Disfarce',
-    amount:'1',
-    },
+        type:'Lanças',
+        amount:'5',
+        },
     
     {
-    type:'Geologia',
-    amount:'1',
-    },
-    
+        type:'Machado',
+        amount:'5',
+        },
+        
     {
-    type:'Eletrônica',
-    amount:'1',
-    },
-    
-    
-    {
-    type:'Física',
-    amount:'1',
-    },
+        type:'Geologia',
+        amount:'5',
+        },
     
     
     {
-    type:'Pilotar',
-    amount:'1',
-    },
+        type:'Contabilidade',
+        amount:'2',
+        },
     
     
     {
-    type:'Psiconálise',
-    amount:'3',
-    },
+        type:'Medicina',
+        amount:'2',
+        },
     
     {
-    type:'Usar Computadores',
-    amount:'1',
-    },
+        type:'Direito',
+        amount:'2',
+        },
     
     {
-    type:'Mecanico',
-    amount:'4',
-    },
+        type:'Quimica',
+        amount:'1',
+        },
+    
+    {
+        type:'Antropologia',
+        amount:'1',
+        },
+    
+    {
+        type:'Arqueologia',
+        amount:'1',
+        },
+    
+    {
+        type:'Astronomia',
+        amount:'1',
+        },
+    
+    {
+        type:'Biologia',
+        amount:'1',
+        },
+    
+    {
+        type:'Chaveiro',
+        amount:'1',
+        },
+    
+    {
+        type:'Disfarce',
+        amount:'1',
+        },
+    
+    {
+        type:'Eletrônica',
+        amount:'1',
+        },
+    
+    {
+        type:'Farmacia',
+        amount:'1',
+        },
+    
     
     
     {
-    type:'Arte',
-    amount:'3',
-    },
-    
-    
-    {
-    type:'Ratrear',
-    amount:'2',
-    },
+        type:'Fisica',
+        amount:'1',
+        },
     
     {
-    type:'Ocultismo',
-    amount:'3',
-    },
+        type:'Pilotar',
+        amount:'1',
+        },
     
+    {
+        type:'Psiconálise',
+        amount:'5',
+        },
+    
+    {
+        type:'Usar Computadores',
+        amount:'1',
+        },
+    
+    {
+        type:'Dirigir Automóvel',
+        amount:'4',
+        },
+    
+    {
+        type:'Mecanica',
+        amount:'4',
+        },
+    
+    {
+        type:'Arte',
+        amount:'3',
+        },
+    
+    {
+        type:'Rastrear',
+        amount:'2',
+        },
+    
+    {
+        type:'Ocultimo',
+        amount:'3',
+        },
 
     ],
 }
@@ -390,6 +413,11 @@ data.attributes.map((attribute, index) => {
 data.pericias.map((pericia, index) => {
   addpericia(pericia, index)
 })
+
+data.acesso.map((pericia, index) => {
+  addpericiar(pericia, index)
+})
+
 
 
 
@@ -445,45 +473,6 @@ $(window).click(function (event) {
     closeModal('#addWeaponModal')
   }
 })
-
-function rollAtribute(atribute, amount) {
-  console.log(this)
-
-
-
-  diceModal.css('display', 'block')
-
-  setTimeout(() => {
-    $('.modalDice').css('transform', 'rotate(360deg)')
-    $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
-  }, 1000)
-
-  setTimeout(() => {
-    $('.sanityDice').css('transform', 'rotate(360deg)')
-    $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
-  }, 1000)
-
-  
-
-  setTimeout(() => {
-    const diceNumber = rollDice('1d20')
-    const diceType = calcDice(amount, diceNumber)
-    $('#diceNumber').text(diceNumber)
-    $('#diceType').text(diceType)
-
-    setTimeout(() => {
-      diceModal.css('display', 'none')
-      $('#diceNumber').text('')
-      $('#diceType').text('')
-
-      $('.modalDice').css('transform', 'rotate(0deg)')
-      $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
-    }, 20000)
-  }, 2000)
-}
-
-
-
 
 
 $('.lifeBar').click(function () {
@@ -557,14 +546,14 @@ $('#addWeaponForm').submit(function (event) {
     weaponType = 'Arco'
   } else if ($('#weaponType').val() == 'fight') {
     weaponType = 'Briga'
-  } else if ($('#weaponType').val() == 'ritual') {
-  weaponType = 'Ritual'
-}
+  }else if ($('#weaponType').val() == 'Ritual') {
+    weaponType = 'Ritual'
+  }
 
   const weapon = {
     name: $('#weaponName').val(),
     type: weaponType,
-    damage: $('#weapondamage').val(),
+    damage: $('#weaponDamage').val(),
     numCurrent: $('#weaponNumCurrent').val(),
     numMax: $('#weaponNumMax').val(),
     attack: $('#weaponAttack').val(),
@@ -733,17 +722,30 @@ function calcDice(ability, dice) {
     if (dice >= type.good) return 'Sucesso Bom'
     if (dice >= type.normal) return 'Sucesso Normal'
     if (dice <= type.normal) return 'Fracasso'
+    if (dice <= type.desastre) return 'Desastre'
   } else if (type.good) {
     if (dice >= type.good) return 'Sucesso Bom'
     if (dice >= type.normal) return 'Sucesso Normal'
     if (dice <= type.normal) return 'Fracasso'
+    if (dice <= type.desastre) return 'Desastre'
   } else if (type.normal) {
     if (dice >= type.normal) return 'Sucesso Normal'
     if (dice <= type.normal) return 'Fracasso'
+    if (dice <= type.desastre) return 'Desastre'
+  } else if (type.desastre) {
+    if (dice <= type.desastre) return 'Desastre'
+  }
 
 }
 
-}
+
+
+
+
+
+
+
+
 
 function rollDice(dice) {
   let [count, max] = dice.split('d')
@@ -774,43 +776,158 @@ function closeModal(modal) {
   Modal.css('display', 'none')
 }
 
+
+
+
+
+
+
 function addWeaponToTable(weapon, id) {
   const newWeapon = $(`<tr id="weapon_${id}">
+  
         <td>
-            <button onclick="deleteWeapon(${id})">
+            <button onclick="deleteWeapon(${id})" style="cursor: pointer;">
                 <i class="fa fa-trash-o trashcan"></i>
             </button>
+            
             ${weapon.name}
         </td>
         <td>${weapon.type}</td>
-        <td>${weapon.damage}</td>
-        <td>${weapon.numCurrent}</td>
+        <td><img onclick="rollDano_${id}()" class="attributeDice" src="./img/dado.png" alt="Dado" style="display: block; margin-left: auto; margin-right: auto; height: 20px; cursor: pointer;">${weapon.damage}</td>
+        <td><input type="number" value="${weapon.numCurrent}"></td>
         <td>${weapon.numMax}</td>
         <td>${weapon.attack}</td>
         <td>${weapon.reach}</td>
         <td>${weapon.defect}</td>
         <td>${weapon.area}</td>
-    </tr>`)
+        </tr>
+    
+    <script>
+    
+    function rollDano_${id}() {
+      console.log(this)
+    
+    
+    
+      diceModal.css('display', 'block')
+    
+      setTimeout(() => {
+        $('.modalDice').css('transform', 'rotate(360deg)')
+        $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
+      }, 1000)
+    
+      setTimeout(() => {
+        $('.sanityDice').css('transform', 'rotate(360deg)')
+        $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
+      }, 1000)
+    
+      
+    
+      setTimeout(() => {
+        const diceNumber = rollDice('${weapon.damage}')
+        $('#diceNumber').text(diceNumber)
+        $('#diceType').text("")
+    
+        setTimeout(() => {
+          diceModal.css('display', 'none')
+          $('#diceNumber').text('')
+          $('#diceType').text('')
+    
+          $('.modalDice').css('transform', 'rotate(0deg)')
+          $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
+        }, 20000)
+      }, 2000)
+    }
+    
+    
+    </script>
+    
+    
+    
+    
+    `)
   $('table#weapons').append(newWeapon)
 }
+
+
+
+
+
+
+
+
+
 
 function addAttribute(attribute, id) {
 
 
 
   const newAttribute = $(`<div class="attribute" id="attribute_${id}">
-    <a id="click_${id}" onclick="rollAtribute('${attribute.type}', ${attribute.amount} )">
+    <a id="click_${id}" onclick="rollAtribute_${id}()">
       <img class="attributeDice" src="./img/dado.png" alt="Dado">
     </a>
     <h3>${attribute.type}</h3>
     <input type="text" name="appearance" value="${attribute.amount}"  id="attribute_input_${id}" >
-  </div>`)
+  </div>
+  
+  
+  
+  <script>
+  
+function rollAtribute_${id}(atribute, amount) {
+  console.log(this)
 
 
 
-  $('#attributesList').append(newAttribute)
+  diceModal.css('display', 'block')
 
+  setTimeout(() => {
+    $('.modalDice').css('transform', 'rotate(360deg)')
+    $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
+  }, 1000)
+
+  setTimeout(() => {
+    $('.sanityDice').css('transform', 'rotate(360deg)')
+    $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
+  }, 1000)
+
+  
+
+  setTimeout(() => {
+    const tarp_${id} = document.getElementById('attribute_input_${id}').value
+    const diceNumber = rollDice('1d20')
+    const diceType = calcDice(tarp_${id}, diceNumber)
+    $('#diceNumber').text(diceNumber)
+    $('#diceType').text(diceType)
+
+    setTimeout(() => {
+      diceModal.css('display', 'none')
+      $('#diceNumber').text('')
+      $('#diceType').text('')
+
+      $('.modalDice').css('transform', 'rotate(0deg)')
+      $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
+    }, 20000)
+  }, 2000)
 }
+  
+  
+</script>
+  
+  `)
+  $('#attributesList').append(newAttribute)
+}
+
+
+
+
+
+
+function deleteWeapon(id) {
+  $(`tr#weapon_${id}`).remove()
+}
+
+
 
 
 
@@ -821,13 +938,64 @@ function addpericia(pericia, id) {
 
 
   const newpericia = $(`<div class="pericia" id="pericia_${id}">
-    <a id="click_${id}" onclick="rollAtribute('${pericia.type}', ${pericia.amount} )">
+    <a id="click_${id}" onclick="rollPeri_${id}()">
       <img class="attributeDice" src="./img/dado.png" alt="Dado">
     </a>
     <h3>${pericia.type}</h3>
     <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
-  </div>`)
-
+  </div>
+  
+  
+  
+  
+  
+  <script>
+  
+  function rollPeri_${id}(atribute, amount) {
+    console.log(this)
+  
+  
+  
+    diceModal.css('display', 'block')
+  
+    setTimeout(() => {
+      $('.modalDice').css('transform', 'rotate(360deg)')
+      $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
+    }, 1000)
+  
+    setTimeout(() => {
+      $('.sanityDice').css('transform', 'rotate(360deg)')
+      $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
+    }, 1000)
+  
+    
+  
+    setTimeout(() => {
+      const tarpp_${id} = document.getElementById('pericia_input_${id}').value
+      const diceNumber = rollDice('1d20')
+      const diceType = calcDice(tarpp_${id}, diceNumber)
+      $('#diceNumber').text(diceNumber)
+      $('#diceType').text(diceType)
+  
+      setTimeout(() => {
+        diceModal.css('display', 'none')
+        $('#diceNumber').text('')
+        $('#diceType').text('')
+  
+        $('.modalDice').css('transform', 'rotate(0deg)')
+        $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
+      }, 20000)
+    }, 2000)
+  }
+    
+    
+  </script>
+  
+  
+  
+  
+  
+  `)
 
 
   $('#periciasList').append(newpericia)
@@ -835,18 +1003,25 @@ function addpericia(pericia, id) {
 }
 
 
+function addpericiar(pericia, id) {
 
 
-function deleteWeapon(id) {
-  $(`tr#${id}`).remove()
+
+  const newpericiar = $(`<div class="pericia" id="pericia_${id}">
+  
+   
+    <a id="click_${id}" onclick="rollAtribute('${pericia.type}', ${pericia.amount} )">
+      <img class="attributeDice" src="./img/dado.png" alt="Dado">
+    </a>
+    <h3>${pericia.type}</h3>
+    <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
+    
+    </div>`)
+
+
+  $('#periciasListr').append(newpericiar)
+
 }
-
-
-
-
- 
-
-
 
 function sanidadetest(){
 
