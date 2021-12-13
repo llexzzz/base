@@ -8,42 +8,21 @@ const data = {
   residence: 'São paulo',
 
   life: {
-    current: 0,
-    max: 0,
+    current: 10,
+    max: 10,
   },
   sanity: {
-    current: 0,
-    max: 0,
+    current: 50,
+    max: 50,
   },
 
   lifeo: {
-    current: 0,
-    max: 0,
+    current: 10,
+    max: 10,
   },
 
   weapons: [
-    {
-      name: 'Balestra',
-      type: 'Arco',
-      damage: '1d20',
-      numCurrent: 1,
-      numMax: 1,
-      attack: 5,
-      reach: '10 m',
-      defect: 1,
-      area: '',
-    },
-    {
-      name: 'Canivete',
-      type: 'Briga',
-      damage: '1d10',
-      numCurrent: '',
-      numMax: '',
-      attack: '1/2',
-      reach: '',
-      defect: 1,
-      area: '',
-    },
+    
   ],
   attributes: [
     {
@@ -100,6 +79,9 @@ const data = {
       type:'Encontrar',
       amount:'5',
       },
+
+      
+
 
   ],
 
@@ -492,41 +474,6 @@ $(window).click(function (event) {
   }
 })
 
-function rollAtribute(atribute, amount) {
-  console.log(this)
-
-
-
-  diceModal.css('display', 'block')
-
-  setTimeout(() => {
-    $('.modalDice').css('transform', 'rotate(360deg)')
-    $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
-  }, 1000)
-
-  setTimeout(() => {
-    $('.sanityDice').css('transform', 'rotate(360deg)')
-    $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
-  }, 1000)
-
-  
-
-  setTimeout(() => {
-    const diceNumber = rollDice('1d20')
-    const diceType = calcDice(amount, diceNumber)
-    $('#diceNumber').text(diceNumber)
-    $('#diceType').text(diceType)
-
-    setTimeout(() => {
-      diceModal.css('display', 'none')
-      $('#diceNumber').text('')
-      $('#diceType').text('')
-
-      $('.modalDice').css('transform', 'rotate(0deg)')
-      $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
-    }, 20000)
-  }, 2000)
-}
 
 $('.lifeBar').click(function () {
   console.log(this)
@@ -739,6 +686,15 @@ function calcDice(ability, dice) {
 
 }
 
+
+
+
+
+
+
+
+
+
 function rollDice(dice) {
   let [count, max] = dice.split('d')
 
@@ -767,6 +723,12 @@ function closeModal(modal) {
   const Modal = $(modal)
   Modal.css('display', 'none')
 }
+
+
+
+
+
+
 
 function addWeaponToTable(weapon, id) {
   const newWeapon = $(`<tr id="weapon_${id}">
@@ -835,17 +797,72 @@ function addWeaponToTable(weapon, id) {
   $('table#weapons').append(newWeapon)
 }
 
+
+
+
+
+
+
+
+
+
 function addAttribute(attribute, id) {
 
 
 
   const newAttribute = $(`<div class="attribute" id="attribute_${id}">
-    <a id="click_${id}" onclick="rollAtribute('${attribute.type}', ${attribute.amount} )">
+    <a id="click_${id}" onclick="rollAtribute_${id}()">
       <img class="attributeDice" src="./img/dado.png" alt="Dado">
     </a>
     <h3>${attribute.type}</h3>
     <input type="text" name="appearance" value="${attribute.amount}"  id="attribute_input_${id}" >
-  </div>`)
+  </div>
+  
+  
+  
+  <script>
+  
+function rollAtribute_${id}(atribute, amount) {
+  console.log(this)
+
+
+
+  diceModal.css('display', 'block')
+
+  setTimeout(() => {
+    $('.modalDice').css('transform', 'rotate(360deg)')
+    $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
+  }, 1000)
+
+  setTimeout(() => {
+    $('.sanityDice').css('transform', 'rotate(360deg)')
+    $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
+  }, 1000)
+
+  
+
+  setTimeout(() => {
+    const tarp_${id} = document.getElementById('attribute_input_${id}').value
+    const diceNumber = rollDice('1d20')
+    const diceType = calcDice(tarp_${id}, diceNumber)
+    $('#diceNumber').text(diceNumber)
+    $('#diceType').text(diceType)
+
+    setTimeout(() => {
+      diceModal.css('display', 'none')
+      $('#diceNumber').text('')
+      $('#diceType').text('')
+
+      $('.modalDice').css('transform', 'rotate(0deg)')
+      $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
+    }, 20000)
+  }, 2000)
+}
+  
+  
+</script>
+  
+  `)
   $('#attributesList').append(newAttribute)
 }
 
@@ -869,12 +886,64 @@ function addpericia(pericia, id) {
 
 
   const newpericia = $(`<div class="pericia" id="pericia_${id}">
-    <a id="click_${id}" onclick="rollAtribute('${pericia.type}', ${pericia.amount} )">
+    <a id="click_${id}" onclick="rollPeri_${id}()">
       <img class="attributeDice" src="./img/dado.png" alt="Dado">
     </a>
     <h3>${pericia.type}</h3>
     <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
-  </div>`)
+  </div>
+  
+  
+  
+  
+  
+  <script>
+  
+  function rollPeri_${id}(atribute, amount) {
+    console.log(this)
+  
+  
+  
+    diceModal.css('display', 'block')
+  
+    setTimeout(() => {
+      $('.modalDice').css('transform', 'rotate(360deg)')
+      $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
+    }, 1000)
+  
+    setTimeout(() => {
+      $('.sanityDice').css('transform', 'rotate(360deg)')
+      $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
+    }, 1000)
+  
+    
+  
+    setTimeout(() => {
+      const tarpp_${id} = document.getElementById('pericia_input_${id}').value
+      const diceNumber = rollDice('1d20')
+      const diceType = calcDice(tarpp_${id}, diceNumber)
+      $('#diceNumber').text(diceNumber)
+      $('#diceType').text(diceType)
+  
+      setTimeout(() => {
+        diceModal.css('display', 'none')
+        $('#diceNumber').text('')
+        $('#diceType').text('')
+  
+        $('.modalDice').css('transform', 'rotate(0deg)')
+        $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
+      }, 20000)
+    }, 2000)
+  }
+    
+    
+  </script>
+  
+  
+  
+  
+  
+  `)
 
 
   $('#periciasList').append(newpericia)
@@ -898,3 +967,61 @@ function addpericiar(pericia, id) {
   $('#periciasListr').append(newpericiar)
 
 }
+
+function sanidadetest(){
+
+  console.log(this)
+
+
+
+  diceModal.css('display', 'block')
+
+
+
+
+
+
+  
+  
+    setTimeout(() => {
+      $('.modalDice').css('transform', 'rotate(360deg)')
+      $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
+    }, 1000)
+  
+    setTimeout(() => {
+      $('.sanityDice').css('transform', 'rotate(360deg)')
+      $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
+    }, 1000)
+  
+    
+  
+    setTimeout(() => {
+      const expo = document.getElementById("damage3").value
+      const diceNumber = rollDice('1d100')
+
+      if (diceNumber > expo){
+        $('#diceNumber').text(diceNumber)
+        $('#diceType').text("Fracasso")
+      
+      }
+       if  (diceNumber <= expo){
+        $('#diceNumber').text(diceNumber)
+        $('#diceType').text("Sucesso")
+      }
+    
+      
+  
+      setTimeout(() => {
+        diceModal.css('display', 'none')
+        $('#diceNumber').text('')
+        $('#diceType').text('')
+  
+        $('.modalDice').css('transform', 'rotate(0deg)')
+        $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
+      }, 20000)
+    }, 2000)
+  }
+  
+
+
+
