@@ -12,6 +12,28 @@ body {
     font-family: 'Itim', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: rgb(7, 7, 7);
+}
+
+body::-webkit-scrollbar-button{
+    background-color: rgb(7, 7, 7);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(104, 104, 104);
+    border-radius: 70px;
+}
+
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(114, 114, 114);
+}
+
 hr {
     border-top: 1px solid #a2a2a2;
     width: 90%;
@@ -50,9 +72,9 @@ h2.grid-title {
     display: grid;
     grid-template-areas: 
         'details details details character'
-        'pr pr pr attributes '
-        'combat combat combat combat'
+        'attributes attributes attributes attributes '
         'pericias pericias pericias pericias '
+        'combat combat combat combat'
         'inventarios inventarios inventarios inventarios '
         'habilidades habilidades habilidades habilidades'
         'antecedentes antecedentes antecedentes antecedentes';
@@ -249,6 +271,11 @@ select:focus {
     outline: none;
 }
 
+
+.sinalisarvida {
+    text-align: center;
+}
+
 /* INICIO BARS */
 
 .bars {
@@ -256,11 +283,34 @@ select:focus {
 }
 
 .bar {
-    width: 100%;
+    align-self: auto;
+    width: 80%;
     background-color: grey;
     margin-bottom: 10px;
     margin-top: 5px;
-    overflow: hidden;
+}
+
+
+
+
+.tira {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    background-color: #640101;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.add {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    background-color: #640101;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .barcount {
@@ -281,6 +331,19 @@ select:focus {
     align-items: end;
 }
 
+
+.lifelocal {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.lifelocalo {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
 .sanityDice {
     display: block;
     margin-left: auto;
@@ -295,6 +358,15 @@ select:focus {
 .bars .checkboxs label {
     margin-right: 10px;
 }
+
+
+
+
+    
+
+
+
+
 
 .lifeBar {
     /* width: 50%; */
@@ -311,7 +383,7 @@ select:focus {
 .lifeBaro {
     /* width: 50%; */
     height: 25px;
-    background-color: #2e0150;
+    background-color: #0a6e01;
     transition: width 2s;
     display: flex;
     align-items: center;
@@ -322,11 +394,11 @@ select:focus {
 
 
 .baro {
-    width: 100%;
+    align-self: auto;
+    width: 80%;
     background-color: grey;
     margin-bottom: 10px;
     margin-top: 5px;
-    overflow: hidden;
 }
 
 .barcounto {
@@ -334,7 +406,7 @@ select:focus {
     margin-left: 10px;
 }
 .sanityBar {
-    width: 50%;
+    width: 80%;
     height: 25px;
     background-color: #011b64;
     transition: width 2s;
@@ -342,6 +414,47 @@ select:focus {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.tiras {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    background-color: #011b64;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.adds {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    background-color: #011b64;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.tirao {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    background-color: #0a6e01;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.addo {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    background-color: #0a6e01;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 /* FIM BARS */
@@ -387,11 +500,71 @@ select:focus {
 .attributes .attributesList {
     display: flex;
     
-    height: 270px;
+    height: 200px;
     flex-flow: row wrap;
     justify-content: center;
     
 }
+/*defesas*/
+.defesas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 1px 15px;
+}
+
+.defesas p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.defesas input {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    align-self: center;
+}
+
+
+.defesas .def {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.defesas .defes {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.defesas .defes {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.defesas .defar {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.defesas .defout {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.defesas .deftot {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+
+/*defesas fim*/
 
 
 
@@ -399,7 +572,7 @@ select:focus {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    height: 370px;
+    height: 500px;
     overflow-y: scroll;
 }
 
@@ -735,8 +908,8 @@ input[type="checkbox"]:checked + label:after {
 
 
 .habilidades{
-    height: 200px;
-    width: 640px; 
+    height: 298px;
+    width: 849.25px; 
     margin-left: auto;
     margin-right: auto;
       
@@ -812,7 +985,7 @@ input[type="checkbox"]:checked + label:after {
 
 .antecedentes{
     height: 1100px;
-    width: 640px; 
+    width: 849.25px; 
     margin-left: auto;
     margin-right: auto;
       
@@ -823,7 +996,7 @@ input[type="checkbox"]:checked + label:after {
 
 
 .textHabilidades1{
-    height: 6.5%;
+    height: 7%;
     width: 95%;
     border: #0a0b0c;
     margin-left: 2.5%;
