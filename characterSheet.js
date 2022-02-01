@@ -8,17 +8,17 @@ const data = {
   residence: 'São paulo',
 
   life: {
-    current: 10,
-    max: 10,
+    current: 11,
+    max: 11,
   },
   sanity: {
-    current: 50,
-    max: 50,
+    current: 72,
+    max: 72,
   },
 
   lifeo: {
-    current: 10,
-    max: 10,
+    current: 2,
+    max: 2,
   },
 
   weapons: [
@@ -27,377 +27,154 @@ const data = {
   attributes: [
     {
       type: 'Força',
-      amount: 12,
+      amount: 0,
     },
     {
-      type: 'Destreza',
-      amount: 13,
+      type: 'Agilidade',
+      amount: 0,
     },
     {
-      type: 'Constituição',
-      amount: 18,
+      type: 'Vigor',
+      amount: 0,
     },
     {
-      type: 'Aparência',
-      amount: 4,
+      type: 'Presença',
+      amount: 0,
     },
     {
-      type: 'Poder',
-      amount: 11,
+      type: 'Intelecto',
+      amount: 0,
     },
-    {
-      type: 'Sorte',
-      amount: 11,
-    },
-    {
-      type: 'Inteligência',
-      amount: 14,
-    },
-    {
-      type: 'Educação',
-      amount: 15,
-    },
-    {
-      type: 'Movimento',
-      amount: 9,
-    },
-    {
-      type: 'Tamanho',
-      amount: 11,
-    },
+    
   ],
 
 
-  acesso:[
-    {
-      type:'Escutar',
-      amount:'5',
-      },
-      
-      
-      {
-      type:'Encontrar',
-      amount:'5',
-      },
 
-      
-
-
-  ],
 
   pericias: [
 
     
-    //força
     {
-    type:'Agarrar',
-    amount:'5',
+    type:'Atletismo',
+    amount:'+0',
     },
 
     {
-      type:'Pulo',
-      amount:'10',
+      type:'Atualidades',
+      amount:'+0',
       },
 
       {
-        type:'Arremessar',
-        amount:'5',
+        type:'Ciência',
+        amount:'+0',
         },
-
-
-        //destreza
-        
-    
-    {
-    type:'Escalar',
-    amount:'8',
-    },
-    
-
-
-    {
-    type:'Furtividade',
-    amount:'8',
-    },
-
-
-    {
-      type:'Nadar',
-      amount:'8',
-      },
-    
-    
-    {
-    type:'Ocultar',
-    amount:'3',
-    },
-    
-    {
-    type:'Fotografia',
-    amount:'5',
-    },
-
-    //constituição
-    
-    {
-    type:'Escutar',
-    amount:'5',
-    },
-    
-    
-    {
-    type:'Encontrar',
-    amount:'5',
-    },
-    
-    //inteligência
-    
-    {
-    type:'História',
-    amount:'5',
-    },
-    
-    
-    {
-    type:'Investigar',
-    amount:'5',
-    },
-
-
-    {
-      type:'1°s Socorros',
-      amount:'10',
-      },
-    
-    
-    {
-    type:'Pesq.Biblioteca',
-    amount:'5',
-    },
-    
-    //aparencia
-
-    {
-    type:'Persuadir',
-    amount:'3',
-    },
-    
-    
-    {
-    type:'Lábia',
-    amount:'1',
-    },
-    
-    {
-    type:'Intimidar',
-    amount:'1',
-    },
-    
-    {
-    type:'Barganha',
-    amount:'3',
-    },
-    
-    
-    {
-    type:'Crédito',
-    amount:'3',
-    },
-    
-    
-    {
-    type:'Psicologia',
-    amount:'5',
-    },
-    
-    
-
-    //educação
-
-    {
-      type:'Arco, Balestra, Besta',
-      amount:'5',
-      },
-
-      {
-        type:'Armas Pesadas',
-        amount:'2',
-        },
-        
-        
-    
-    {
-        type:'Lança-chamas',
-        amount:'2',
-        },
-    
-    
-    {
-        type:'Metralhadoras',
-        amount:'5',
-        },
-    
-    
-    
-    {
-        type:'Pistola,Revólver',
-        amount:'8',
-        },
-    
     
         {
-        type:'Rifle, Espingarda',
-        amount:'6',
-        },
-    
-    
-    
-    
-    
-    {
-        type:'Briga',
-        amount:'8',
-        },
-    
-    
-    
-    {
-        type:'Chicotes',
-        amount:'1',
-        },
-    
-    
-    
-    
-    {
-        type:'Espadas',
-        amount:'5',
-        },
-    
-    
-    {
-        type:'Lanças',
-        amount:'5',
-        },
-    
-    {
-        type:'Machado',
-        amount:'5',
-        },
+          type:'Diplomacia',
+          amount:'+0',
+          },
+
+          {
+            type:'Enganação',
+            amount:'+0',
+            },
         
-    {
-        type:'Geologia',
-        amount:'5',
-        },
+            {
+              type:'Fortitude',
+              amount:'+0',
+              },
+        
+              {
+                type:'Furtividade',
+                amount:'+0',
+                },
+            
+                {
+                  type:'História',
+                  amount:'+0',
+                  },
+
+                  {
+                    type:'Intimidação',
+                    amount:'+0',
+                    },
+                
+                    {
+                      type:'Intuição',
+                      amount:'+0',
+                      },
+                
+                      {
+                        type:'Investigação',
+                        amount:'+0',
+                        },
+                    
+                        {
+                          type:'Luta',
+                          amount:'+0',
+                          },
+                
+                          {
+                            type:'Medicina',
+                            amount:'+0',
+                            },
+                        
+                            {
+                              type:'Ocultismo',
+                              amount:'+0',
+                              },
+                        
+                              {
+                                type:'Percepção',
+                                amount:'+0',
+                                },
+                            
+                                {
+                                  type:'Pilotagem',
+                                  amount:'+0',
+                                  },
+
+                                  {
+                                    type:'Pontaria',
+                                    amount:'+0',
+                                    },
+                                
+                                    {
+                                      type:'Prestidigitação',
+                                      amount:'+0',
+                                      },
+                                
+                                      {
+                                        type:'Profissão',
+                                        amount:'+0',
+                                        },
+                                    
+                                        {
+                                          type:'Reflexos',
+                                          amount:'+0',
+                                          },
+                                
+                                          {
+                                            type:'Religião',
+                                            amount:'+0',
+                                            },
+                                        
+                                            {
+                                              type:'Tática',
+                                              amount:'+0',
+                                              },
+                                        
+                                              {
+                                                type:'Tecnologia',
+                                                amount:'+0',
+                                                },
+                                            
+                                                {
+                                                  type:'Vontade',
+                                                  amount:'+0',
+                                                  },
+
     
-    
-    {
-        type:'Contabilidade',
-        amount:'2',
-        },
-    
-    
-    {
-        type:'Medicina',
-        amount:'2',
-        },
-    
-    {
-        type:'Direito',
-        amount:'2',
-        },
-    
-    {
-        type:'Quimica',
-        amount:'1',
-        },
-    
-    {
-        type:'Antropologia',
-        amount:'1',
-        },
-    
-    {
-        type:'Arqueologia',
-        amount:'1',
-        },
-    
-    {
-        type:'Astronomia',
-        amount:'1',
-        },
-    
-    {
-        type:'Biologia',
-        amount:'1',
-        },
-    
-    {
-        type:'Chaveiro',
-        amount:'1',
-        },
-    
-    {
-        type:'Disfarce',
-        amount:'1',
-        },
-    
-    {
-        type:'Eletrônica',
-        amount:'1',
-        },
-    
-    {
-        type:'Farmacia',
-        amount:'1',
-        },
-    
-    
-    
-    {
-        type:'Fisica',
-        amount:'1',
-        },
-    
-    {
-        type:'Pilotar',
-        amount:'1',
-        },
-    
-    {
-        type:'Psiconálise',
-        amount:'5',
-        },
-    
-    {
-        type:'Usar Computadores',
-        amount:'1',
-        },
-    
-    {
-        type:'Dirigir Automóvel',
-        amount:'4',
-        },
-    
-    {
-        type:'Mecanica',
-        amount:'4',
-        },
-    
-    {
-        type:'Arte',
-        amount:'3',
-        },
-    
-    {
-        type:'Rastrear',
-        amount:'2',
-        },
-    
-    {
-        type:'Ocultimo',
-        amount:'3',
-        },
 
     ],
 }
@@ -414,9 +191,7 @@ data.pericias.map((pericia, index) => {
   addpericia(pericia, index)
 })
 
-data.acesso.map((pericia, index) => {
-  addpericiar(pericia, index)
-})
+
 
 
 
@@ -588,6 +363,11 @@ $('#changeLife').submit(function (event) {
   event.preventDefault()
 })
 
+
+
+
+
+
 $('#changeLifeo').submit(function (event) {
   let current = Number($('#lifeCurrento').val())
   const max = Number($('#lifeMaxo').val())
@@ -641,78 +421,26 @@ function calcDice(ability, dice) {
   // Não encontrei uma forma mais fácil, então fiz assim
 
   const table = [
-    { normal: 20 },
-    { normal: 19, good: 20 },
-    { normal: 18, good: 20 },
-    { normal: 17, good: 19 },
-    { normal: 16, good: 19, extreme: 20 },
-    { normal: 15, good: 18, extreme: 20 },
-    { normal: 14, good: 18, extreme: 20 },
-    { normal: 13, good: 17, extreme: 20 },
-    { normal: 12, good: 17, extreme: 20 },
-    { normal: 11, good: 16, extreme: 19 },
-    { normal: 10, good: 16, extreme: 19 },
-    { normal: 9, good: 16, extreme: 19 },
-    { normal: 8, good: 15, extreme: 19 },
-    { normal: 7, good: 14, extreme: 19 },
-    { normal: 6, good: 14, extreme: 18 },
-    { normal: 5, good: 13, extreme: 18 },
-    { normal: 4, good: 13, extreme: 18 },
-    { normal: 3, good: 12, extreme: 18 },
-    { normal: 2, good: 12, extreme: 18 },
-    { normal: 2, good: 11, extreme: 17 },
-    { normal: 2, good: 11, extreme: 17 },
-    { normal: 2, good: 11, extreme: 17 },
-    { normal: 2, good: 11, extreme: 17 },
-    { normal: 2, good: 10, extreme: 17 },
-    { normal: 2, good: 10, extreme: 16 },
-    { normal: 2, good: 9, extreme: 16 },
-    { normal: 2, good: 9, extreme: 16 },
-    { normal: 2, good: 8, extreme: 16 },
-    { normal: 2, good: 8, extreme: 16 },
-    { normal: 2, good: 7, extreme: 15 },
-    { normal: 2, good: 7, extreme: 15 },
-    { normal: 2, good: 6, extreme: 15 },
-    { normal: 2, good: 6, extreme: 15 },
-    { normal: 2, good: 5, extreme: 15 },
-    { normal: 2, good: 5, extreme: 14 },
-    { normal: 2, good: 4, extreme: 14 },
-    { normal: 2, good: 4, extreme: 14 },
-    { normal: 2, good: 3, extreme: 14 },
-    { normal: 2, good: 3, extreme: 14 },
-    { normal: 2, good: 2, extreme: 13 },
-    { normal: 2, good: 2, extreme: 13 },
-    { normal: 2, good: 2, extreme: 13 },
-    { normal: 2, good: 2, extreme: 13 },
-    { normal: 2, good: 2, extreme: 13 },
-    { normal: 2, good: 2, extreme: 12 },
-    { normal: 2, good: 2, extreme: 12 },
-    { normal: 2, good: 2, extreme: 12 },
-    { normal: 2, good: 2, extreme: 12 },
-    { normal: 2, good: 2, extreme: 12 },
-    { normal: 2, good: 2, extreme: 11 },
-    { normal: 2, good: 2, extreme: 11 },
-    { normal: 2, good: 2, extreme: 11 },
-    { normal: 2, good: 2, extreme: 11 },
-    { normal: 2, good: 2, extreme: 11 },
-    { normal: 2, good: 2, extreme: 10 },
-    { normal: 2, good: 2, extreme: 10 },
-    { normal: 2, good: 2, extreme: 10 },
-    { normal: 2, good: 2, extreme: 10 },
-    { normal: 2, good: 2, extreme: 10 },
-    { normal: 2, good: 2, extreme: 9 },
-    { normal: 2, good: 2, extreme: 9 },
-    { normal: 2, good: 2, extreme: 9 },
-    { normal: 2, good: 2, extreme: 9 },
-    { normal: 2, good: 2, extreme: 8 },
-    { normal: 2, good: 2, extreme: 8 },
-    { normal: 2, good: 2, extreme: 8 },
-    { normal: 2, good: 2, extreme: 8 },
-    { normal: 2, good: 2, extreme: 8 },
-    { normal: 2, good: 2, extreme: 7 },
-
-   
-    
+    { desastre: 1, normal: 20 },
+    { desastre: 1, normal: 19, good: 20 },
+    { desastre: 1, normal: 18, good: 20 },
+    { desastre: 1, normal: 17, good: 19 },
+    { desastre: 1, normal: 16, good: 19, extreme: 20 },
+    { desastre: 1, normal: 15, good: 18, extreme: 20 },
+    { desastre: 1, normal: 14, good: 18, extreme: 20 },
+    { desastre: 1, normal: 13, good: 17, extreme: 20 },
+    { desastre: 1, normal: 12, good: 17, extreme: 20 },
+    { desastre: 1, normal: 11, good: 16, extreme: 19 },
+    { desastre: 1, normal: 10, good: 16, extreme: 19 },
+    { desastre: 1, normal: 9, good: 16, extreme: 19 },
+    { desastre: 1, normal: 8, good: 15, extreme: 19 },
+    { desastre: 1, normal: 7, good: 14, extreme: 19 },
+    { desastre: 1, normal: 6, good: 14, extreme: 18 },
+    { desastre: 1, normal: 5, good: 13, extreme: 18 },
+    { desastre: 1, normal: 4, good: 13, extreme: 18 },
+    { desastre: 1, normal: 3, good: 12, extreme: 18 },
+    { desastre: 1, normal: 2, good: 12, extreme: 18 },
+    { desastre: 1, normal: 2, good: 11, extreme: 17 },
   ]
 
   const type = table[ability - 1]
@@ -863,99 +591,64 @@ function addAttribute(attribute, id) {
 
 
   const newAttribute = $(`<div class="attribute" id="attribute_${id}">
-    <a id="click_${id}" onclick="rollAtribute_${id}()">
+  <a id="click_${id}" onclick="roll_dice_rep${id}()">
       <img class="attributeDice" src="./img/dado.png" alt="Dado">
     </a>
     <h3>${attribute.type}</h3>
     <input type="text" name="appearance" value="${attribute.amount}"  id="attribute_input_${id}" >
   </div>
   
+<script>
   
-  
-  <script>
-  
-function rollAtribute_${id}(atribute, amount) {
-  console.log(this)
-
-
-
-  diceModal.css('display', 'block')
-
-  setTimeout(() => {
-    $('.modalDice').css('transform', 'rotate(360deg)')
-    $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
-  }, 1000)
-
-  setTimeout(() => {
-    $('.sanityDice').css('transform', 'rotate(360deg)')
-    $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
-  }, 1000)
-
+  function roll${id}(cnt, dice)
+  {
+    result${id}='';
+    sum=0;
+    for (var ik=1; ik<=cnt; ik++)
+    {
+        result${id}+=(ik>1)?'+':'';
+          roll_result${id}=Math.floor((Math.random()*dice)+1);
+      sum+=roll_result${id};
+        result${id}+=roll_result${id};
+    }
+    result${id}+=(cnt>1)?' = <b>'+sum+'</b>':'';
+    element_ID=cnt+'d'+dice;
+    document.getElementById(element_ID).innerHTML=result${id};
+  }
   
 
-  setTimeout(() => {
-    const tarp_${id} = document.getElementById('attribute_input_${id}').value
-    const diceNumber = rollDice('1d20')
-    const diceType = calcDice(tarp_${id}, diceNumber)
-    $('#diceNumber').text(diceNumber)
-    $('#diceType').text(diceType)
 
-    setTimeout(() => {
-      diceModal.css('display', 'none')
-      $('#diceNumber').text('')
-      $('#diceType').text('')
 
-      $('.modalDice').css('transform', 'rotate(0deg)')
-      $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
-    }, 20000)
-  }, 2000)
-}
+
+
+  function roll_dice_rep${id}()
+  {
+    rep= parseInt(document.getElementById('attribute_input_${id}').value) + parseInt(1);
+    cnt= 1;
+    dice= 20;
   
-  
-</script>
-  
-  `)
-  $('#attributesList').append(newAttribute)
-}
+    result${id}=' ';
+    for (var jk=1; jk<=rep; jk++)
+    {
+        sum=0;
+        for (var ik=1; ik<=cnt; ik++)
+        {
+            result${id}+=(ik>1)?'+':'';
+              roll_result${id}=Math.floor((Math.random()*dice)+1);
+          sum+=roll_result${id};
+            result${id}+=roll_result${id};
+        }
+        result${id}+=(cnt>1)?' = <b>'+sum+'</b>':'';
+        result${id}+=',  ';
+    }
 
 
 
 
-
-
-function deleteWeapon(id) {
-  $(`tr#weapon_${id}`).remove()
-}
-
-
-
-
-
-
-
-function addpericia(pericia, id) {
-
-
-
-  const newpericia = $(`<div class="pericia" id="pericia_${id}">
-    <a id="click_${id}" onclick="rollPeri_${id}()">
-      <img class="attributeDice" src="./img/dado.png" alt="Dado">
-    </a>
-    <h3>${pericia.type}</h3>
-    <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
-  </div>
-  
-  
-  
-  
-  
-  <script>
-  
-  function rollPeri_${id}(atribute, amount) {
     console.log(this)
-  
-  
-  
+
+
+
     diceModal.css('display', 'block')
   
     setTimeout(() => {
@@ -971,11 +664,8 @@ function addpericia(pericia, id) {
     
   
     setTimeout(() => {
-      const tarpp_${id} = document.getElementById('pericia_input_${id}').value
-      const diceNumber = rollDice('1d20')
-      const diceType = calcDice(tarpp_${id}, diceNumber)
+      const diceNumber = result${id}
       $('#diceNumber').text(diceNumber)
-      $('#diceType').text(diceType)
   
       setTimeout(() => {
         diceModal.css('display', 'none')
@@ -986,14 +676,52 @@ function addpericia(pericia, id) {
         $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
       }, 20000)
     }, 2000)
+  
+
   }
-    
-    
   </script>
   
+  `)
+  $('#attributesList').append(newAttribute)
+}
+
+
+
+
+
+
+
+
+
+
+function addpericia(pericia, id) {
+
+
+
+  const newpericia = $(`<div class="pericia" id="pericia_${id}">
+  <div class="sty${id}">
+  <input type="checkbox" id="crazedi${id}" name="crazedi${id}"  value="crazedi${id}" style="width: 80px;" ><label for="crazedi${id}" >Treinado</label>
+  </div>
+  <img class="attributeDice" src="./img/dado.png" alt="Dado">
+  </a>
+    
+    <h3>${pericia.type}</h3>
+    
+    <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
+  </div>
   
+  <style>
+
+  .sty${id} {
+    text-align: center;
+  }
+
   
-  
+
+
+
+
+  </style>
   
   `)
 
@@ -1008,75 +736,173 @@ function addpericiar(pericia, id) {
 
 
   const newpericiar = $(`<div class="pericia" id="pericia_${id}">
-  
-   
-    <a id="click_${id}" onclick="rollAtribute('${pericia.type}', ${pericia.amount} )">
       <img class="attributeDice" src="./img/dado.png" alt="Dado">
     </a>
     <h3>${pericia.type}</h3>
     <input type="text" name="appearance" value="${pericia.amount}"  id="pericia_input_${id}" >
-    
-    </div>`)
+  </div>`)
 
 
   $('#periciasListr').append(newpericiar)
 
 }
 
-function sanidadetest(){
-
-  console.log(this)
 
 
-
-  diceModal.css('display', 'block')
+function deleteWeapon(id) {
+  $(`tr#weapon_${id}`).remove()
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+//para vida
+
+
+function tirar(){
+  
+  let current = Number($('#lifeCurrent').val()) - 1
+  const max = Number($('#lifeMax').val())
 
   
-  
-    setTimeout(() => {
-      $('.modalDice').css('transform', 'rotate(360deg)')
-      $('.modalDice').css('-webkit-transform', 'rotate(360deg)')
-    }, 1000)
-  
-    setTimeout(() => {
-      $('.sanityDice').css('transform', 'rotate(360deg)')
-      $('.sanityDice').css('-webkit-transform', 'rotate(360deg)')
-    }, 1000)
-  
-    
-  
-    setTimeout(() => {
-      const expo = document.getElementById("damage3").value
-      const diceNumber = rollDice('1d100')
-
-      if (diceNumber > expo){
-        $('#diceNumber').text(diceNumber)
-        $('#diceType').text("Fracasso")
-      
-      }
-       if  (diceNumber <= expo){
-        $('#diceNumber').text(diceNumber)
-        $('#diceType').text("Sucesso")
-      }
-    
-      
-  
-      setTimeout(() => {
-        diceModal.css('display', 'none')
-        $('#diceNumber').text('')
-        $('#diceType').text('')
-  
-        $('.modalDice').css('transform', 'rotate(0deg)')
-        $('.modalDice').css('-webkit-transform', 'rotate(0deg)')
-      }, 20000)
-    }, 2000)
-  }
-  
+  data.life.current = current
+  data.life.max = max
 
 
 
+  $('.lifeBar').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
+  
+  $('#lifeCurrent').val(data.life.current) 
+  $('#lifeCount').text(`${data.life.current}/${data.life.max}`)
+  
+}
+
+
+function add(){
+  
+  let current = Number($('#lifeCurrent').val()) + 1
+  const max = Number($('#lifeMax').val())
+
+  
+  data.life.current = current
+  data.life.max = max
+
+
+
+  $('.lifeBar').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
+  
+  $('#lifeCurrent').val(data.life.current) 
+  $('#lifeCount').text(`${data.life.current}/${data.life.max}`)
+  
+
+}
+
+
+
+
+//para sanidade
+
+function tirars(){
+
+  let current = Number($('#sanityCurrent').val()) - 1
+  const max = Number($('#sanityMax').val())
+
+  
+
+  data.sanity.current = current
+  data.sanity.max = max
+
+  $('.sanityBar').css('width', `${calculateBar(current, max)}%`)
+
+   $('#sanityCurrent').val(data.sanity.current) 
+  $('#sanityCount').text(`${current}/${max}`)
+  
+}
+
+
+function adds(){
+
+  let current = Number($('#sanityCurrent').val()) + 1
+  const max = Number($('#sanityMax').val())
+
+  
+
+  data.sanity.current = current
+  data.sanity.max = max
+
+  $('.sanityBar').css('width', `${calculateBar(current, max)}%`)
+
+   $('#sanityCurrent').val(data.sanity.current) 
+  $('#sanityCount').text(`${current}/${max}`)
+  
+}
+
+
+
+
+
+
+//para esforço
+
+function tiraro(){
+  
+  let current = Number($('#lifeCurrento').val()) - 1
+  const max = Number($('#lifeMaxo').val())
+
+  
+  data.life.current = current
+  data.life.max = max
+
+
+
+  $('.lifeBaro').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
+  
+  $('#lifeCurrento').val(data.life.current) 
+  $('#lifeCounto').text(`${data.life.current}/${data.life.max}`)
+  
+}
+
+
+function addo(){
+  
+  let current = Number($('#lifeCurrento').val()) + 1
+  const max = Number($('#lifeMaxo').val())
+
+  
+  data.life.current = current
+  data.life.max = max
+
+
+
+  $('.lifeBaro').css('width', `${calculateBar(data.life.current, data.life.max)}%`)
+  
+  $('#lifeCurrento').val(data.life.current) 
+  $('#lifeCounto').text(`${data.life.current}/${data.life.max}`)
+  
+
+}
+
+
+
+
+
+function somadadef(valor){
+
+alert(valor)
+
+
+
+
+
+}
