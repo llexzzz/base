@@ -14,7 +14,17 @@
     <title>Ficha do personagem</title>
   </head>
   <body>
+
     <h1 class="title">Perfil de investigador</h1>
+
+
+
+
+
+
+
+
+
 
     <!-- modal -->
     <div id="diceAttributes" class="modal">
@@ -41,7 +51,7 @@
 
     <div id="lifeModalo" class="modal with-input">
       <div class="modal-content">
-        <h2>MODIFICAR Pontos de Ocultismo</h2>
+        <h2>MODIFICAR Pontos de Esforço</h2>
         <hr />
         <form class="formModal" id="changeLifeo">
           <h3>Atual</h3>
@@ -165,42 +175,66 @@
           <img class="dice" src="./img/dado.png" alt="Dado" />
         </div>
 
+
+
         <div class="bars">
-          <h4>Vida</h4>
-          <div class="bar">
-            <div class="lifeBar" style="width: 0%">
-              <p class="barcount" id="lifeCount"></p>
+          <h4 class="sinalisarvida">Vida</h4>
+
+
+            
+          
+            
+
+          
+          
+            
+
+
+            <div class="lifelocal">
+              <button onclick="tirar()"class="tira">-1</button>
+              <div class="bar">
+                <div class="lifeBar" style="width: 0%">
+                <p class="barcount" id="lifeCount"></p>   
+                  </div>
+                  </div>
+                  <button onclick="add()"class="add">+1</button>
+                  
             </div>
-          </div>
+          
+           
+          
+
+
+
           <div class="checkboxs">
             <form action="">
-              <input type="checkbox" id="lesion" name="lesion" value="lesion" />
-              <label for="lesion"> Lesão grave</label>
-              <input type="checkbox" id="injury" name="injury" value="injury" />
-              <label for="injury"> Inconsciente</label>
               <input type="checkbox" id="dying" name="dying" value="dying" />
               <label for="dying"> Morrendo</label>
+              <input type="checkbox" id="craze1" name="crazed1" value="crazed1" />
+              <label for="craze1"> 1ª Turno</label>
+              <input type="checkbox" id="craze2" name="crazed2" value="crazed2" />
+              <label for="craze2"> 2ª Turno</label>
+              <input type="checkbox" id="craze3" name="crazed3" value="crazed3" />
+              <label for="craze3"> 3ª Turno</label>
             </form>
           </div>
 
+
+
+
           <h4>Sanidade</h4>
+          
           <div class="sanity">
+              <button onclick="tirars()" class="tiras">-1</button>
             <div class="contentSanityBar">
               <div class="sanityBar" style="width: 0%">
                 <p class="barcount" id="sanityCount"></p>
-              </div>
+              </div> 
             </div>
-            <div class="dicesanity">
-              <a class="dicesanity" onclick="sanidadetest()">
-                <img class="sanityDice"  src="./img/dado.png" alt="Dado" />
             
-
-              </a>
-            
-          
+            <button onclick="adds()" class="adds">+1</button> 
           </div>
 
-          </div>
           <div class="checkboxs">
             <input
               type="checkbox"
@@ -208,40 +242,121 @@
               name="traumatized"
               value="traumatized"
             />
-            <label for="traumatized"> Traumatizado</label>
             <input type="checkbox" id="crazed" name="crazed" value="crazed" />
-            <label for="crazed"> Enlouquecido</label>
+            <label for="crazed"> Enlouquecendo</label>
+            <input type="checkbox" id="crazed1" name="crazed1" value="crazed1" />
+            <label for="crazed1"> 1ª Turno</label>
+            <input type="checkbox" id="crazed2" name="crazed2" value="crazed2" />
+            <label for="crazed2"> 2ª Turno</label>
+            <input type="checkbox" id="crazed3" name="crazed3" value="crazed3" />
+            <label for="crazed3"> 3ª Turno</label>
           </div>
 
-          <h4>Pontos de Ocultismo</h4>
-          <div class="baro">
-            <div class="lifeBaro" style="width: 0%">
-              <p class="barcounto" id="lifeCounto"></p>
-            </div>
+
+          
+          <h4>Pontos de Esforço</h4>
+          <div class="lifelocalo">
+            <button onclick="tiraro()"class="tirao">-1</button>
+            <div class="baro">
+              <div class="lifeBaro" style="width: 0%">
+              <p class="barcounto" id="lifeCounto"></p>   
+                </div>
+                </div>
+                <button onclick="addo()"class="addo">+1</button>
+                
           </div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
 
         <div class="extra">
           <div class="damage">
             <p>Dano extra</p>
             <input type="text" name="damage2" value="0" id="damage2" />
           </div>
+
           <div class="body">
-            <p>Corpo </p>
+            <p>Movimento</p>
             <input type="text"  value="0" name="damage1" id="damage1" />
           </div>
+
+
           <div class="exposure">
             <p>Exposição paranormal</p>
             <input type="text" value="20"  name="damage3" id="damage3" />
           </div>
         </div>
+
+
+        <div class="defesas">
+
+          <div class="def" >
+            <p>Defesa Natural</p>
+            <input type="text" value="5" name="def" id="def" onchange="somadadef(this.value)"/>
+          </div>
+  
+      
+          <h2>+</h2>
+  
+          <div class="defar">
+            <p>Defesa de Armadura</p>
+            <input type="text"  value="5"  name="defar" id="defar" />
+          </div>
+
+          <h2>+</h2>
+  
+          <div class="defes">
+            <p>Defesa Especial</p>
+            <input type="text" value="0"   name="defes" id="defes" />
+          </div>
+  
+          <h2>+</h2>
+  
+          <div class="defout">
+            <p>Defesa Outros</p>
+            <input type="text" value="0"   name="defout" id="defout" />
+          </div>
+  
+  
+  
+          <h2>=</h2>
+  
+          <div class="deftot">
+            <p>Defesa Total</p>
+            <input type="text" value="10"   name="deftot" id="deftot" />
+          </div>
+  
+  
+  
+        </div>
+        
       </div>
+
+
+
+      
+
+
+
+
       <div class="attributes border">
         <h2 class="grid-title">ATRIBUTOS</h2>
         <hr />
 
         <div class="attributesList" id="attributesList"></div>
       </div>
+
+
+      
 
 
 
@@ -252,16 +367,7 @@
         <div class="periciasList" id="periciasList"></div>
       </div>
 
-      <div class="periciasr border">
-        <div class="periciasrheader">
-        <h2 class="grid-title">PERICIA</h2>
-        <button id="addperi">&plus;</button>
-        </div>
-        <hr />
-        <h4  style="color: grey; margin-left: 25%;">Acesso Rápido</h4>
-        <hr />
-        <div class="periciasListr" id="periciasListr"></div>
-      </div>
+      
 
 
       <div class="combat border">
@@ -287,21 +393,24 @@
       </div>
       
 
-      
-    </div>
-      
-
-
-  
-  <div class="habilidades border">
+      <div class="habilidades border">
         <h2 class="grid-titleh">Habilidades</h2>
         <hr />
         <textarea class="textHabilidades" style="color: white; background-color: #0a0b0c;"></textarea>
       </div>
 
-    <div class="DIVISÃO"></div>
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="antecedentes border">
         <h1 class="grid-titleh">Antecedentes</h1>
         <hr />
@@ -334,6 +443,14 @@
         
       
       </div>
+    </div>
+      
+
+
+  
+    
+    
+      
     
     
     
