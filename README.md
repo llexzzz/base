@@ -8,16 +8,28 @@ Talvez você que programe a muito tempo, vai encontrar algumas gambiarras nos c�
 Preferências:
 
 Barra de Sanidade ✔️
+
 Barra de PE✔️
+
 Atualizar atributos✔️
+
 Atualizar o comando do dado✔️
+
 Atualizar as perícias✔️
+
 Adicionar input para habilidades✔️
+
 Adicionar input antecedentes✔️
+
 Adicionar inputs de defesas
+
 Automatizar inputs de defesas
+
 Adicionar inputs de resistência
+
 Arrumar calculadora de dados
+
 Arrumar div combate
+
 Adicionar div inventário
 
